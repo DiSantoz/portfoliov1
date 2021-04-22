@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body{
+    background-color: rgb(233, 219, 219);
+}
+
 /* start of header & navigation styling */
 
 .header {
@@ -37,18 +41,11 @@
     padding: 10px 15px;
     font-weight: bold;
     font-size: 1.2vw;
-    text-decoration: underline;
-}
-
-
-.header nav ul{
-    list-style-type: none;
-} 
-
-.header a{
+    text-decoration: underline; 
     color: gainsboro;
-    text-decoration: none;
+    list-style-type: none;
 }
+
 /* start of banner css */
 
 .banner{
@@ -76,20 +73,24 @@
 
 /*start of about me section */
 
-.intro{
-    display: flex;
-    padding: 10px;
-}
 
-.column, .left{
-    width: 25%;
-}
-
-.column, .right{
-    width: 75%
-}
 
 /* start of work styling */
 .coming-soon img{
     width:50%;
 }
+
+/*start of contact me section */
+.contact{
+    padding: 15px 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.contact a{
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color:black;
+    text-decoration: underline;
+}
+
