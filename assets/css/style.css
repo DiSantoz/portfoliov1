@@ -6,24 +6,73 @@
 
 /* start of header & navigation styling */
 
-.header {
+header {
     padding: 20px 35px;
     font-family:monospace;
-    background-color: rgb(16, 61, 88);
+    background-color: rgb(44, 101, 136);
     color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    z-index: 9999;
 }
 
 header h1{
+    margin: 0;
     font-size: 40px;
 }
 
-.header nav ul{
+header nav{
+    margin: 7px 0;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a{
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 1.4vw;
+    text-decoration: underline;
+}
+
+
+header nav ul{
     list-style-type: none;
 } 
 
-a{
+header a{
     color: gainsboro;
     text-decoration: none;
+}
+/* start of banner css */
+
+.banner{
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.subtitle{
+    position: relative;
+    color: gainsboro;
+    text-shadow: 5px 5px 15px gainsboro;
+    margin: 3.5%;
+    font-size:18px;
+}
+.banner img{
+    float:left;
+    width: 300px;
+    height: auto;
 }
 
 /* start of work styling */
