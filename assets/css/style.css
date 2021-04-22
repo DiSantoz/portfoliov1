@@ -52,7 +52,7 @@
 /* start of banner css */
 
 .banner{
-    background-image: url('../images/banner2.png');
+    background-image: url('../images/banner.png');
     background-size: cover;
     display: flex;
     justify-content:flex-start;
