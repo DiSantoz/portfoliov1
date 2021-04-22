@@ -25,3 +25,8 @@ a{
     color: gainsboro;
     text-decoration: none;
 }
+
+/* start of work styling */
+.coming-soon img{
+    width:50%;
+}
