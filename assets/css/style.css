@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgb(233, 219, 219);
+    background-color: rgb(108, 126, 139);;
 }
 
 /* start of header & navigation styling */
@@ -76,8 +76,60 @@ body{
 
 
 /* start of work styling */
+.my_projects{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.coming-soon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project1{
+    width: 50%;
+    border-radius: 14px;
+    padding: 20px 0;
+    min-height: 250px;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+    background-image: url(https://static.fullstack-bootcamp.com/module-2/flipped-hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.projects{
+    width: 50%;
+    border-radius: 14px;
+    padding: 20px 0px;
+    min-height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(https://webassets.inman.com/wp-content/uploads/2019/10/Untitled-design-2019-10-29T153346.079.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.projects h3, .project1 h3{
+    margin-top: auto;
+    width: 100%;
+    padding: 6px 10px;
+    background-color: teal;
+    opacity: 1;
+}
+
 .coming-soon img{
+    display: flex;
+    justify-content:start;
     width:50%;
+    opacity: 0.7;
 }
 
 /*start of contact me section */
