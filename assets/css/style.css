@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -12,7 +13,6 @@ body{
 
 .header {
     padding: 15px 20px;
-    font-family:Arial, Helvetica, sans-serif;
     background-color: rgb(6, 24, 36);
     color: gainsboro;
     display: flex;
@@ -58,7 +58,6 @@ body{
 }
 
 .subtitle{
-    font-family:Arial, Helvetica, sans-serif;
     color: rgb(6, 24, 36);
     text-shadow: 5px 5px 15px gainsboro;
     margin: 3.5%;
@@ -73,76 +72,91 @@ body{
 
 /*start of about me section */
 
-
-
-/* start of work styling */
-.my_projects{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.coming-soon{
+.intro{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 20px; 
 }
 
-.project1{
-    width: 50%;
-    border-radius: 14px;
-    padding: 20px 0;
-    min-height: 250px;
+/* start of work styling */
+.my-projects{
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     justify-content: space-around;
-    background-image: url(https://static.fullstack-bootcamp.com/module-2/flipped-hero-image.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
+    flex-direction: row;
+}
+
+.my-projects h2{
+    margin: 10px;
 }
 
 .projects{
-    width: 50%;
-    border-radius: 14px;
-    padding: 20px 0px;
-    min-height: 250px;
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: url(https://webassets.inman.com/wp-content/uploads/2019/10/Untitled-design-2019-10-29T153346.079.jpg);
+}
+/* project 1 css*/
+.project1 img{
+    width: 50%;
+    padding: 10px 0px;
+}
+
+/* project 2 css */
+.project2{
+    width: 50%;
+    padding: 50px 0px;
+    background-image: url('../images/coming-soon.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
 }
 
-.projects h3, .project1 h3{
-    margin-top: auto;
-    width: 100%;
-    padding: 6px 10px;
-    background-color: teal;
-    opacity: 1;
+/* project 3 css */
+.project3{
+    width: 50%;
+    padding: 50px 0px;
+    background-image: url('../images/coming-soon.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-.coming-soon img{
-    display: flex;
-    justify-content:start;
-    width:50%;
-    opacity: 0.7;
+/* project 4 css */
+.project4{
+    width: 50%;
+    padding: 50px 0px;
+    background-image: url('../images/coming-soon.jpg');
+    background-size: cover;
+    background-position: center;
 }
+
+/* project 5 css */
+.project5{
+    width: 50%;
+    padding: 50px 0px;
+    background-image: url('../images/coming-soon.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* project title's css */
+.projects h3{
+    color: gainsboro;
+}
+
+/*END OF PROJECT CSS */
 
 /*start of contact me section */
 .contact{
     padding: 15px 20px;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
 .contact a{
     padding: 10px 15px;
     font-weight: bold;
     font-size: 1.2vw;
-    color:black;
+    color:rgb(6, 24, 36);
     text-decoration: underline;
 }
 
