@@ -75,69 +75,65 @@ body{
 .intro{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     margin: 20px; 
+    align-items: stretch;
 }
+.intro h3{
+    font-size: 40px;
+    padding: 0 70px 0 0;
+    border-right: solid;
+    color: rgb(6, 24, 36);
+}
+.intro p{
+    font-size: 20px;
+    color: rgb(6, 24, 36);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.intro > {
+    flex: 0 0 25%;
+    text-align: right;
+}
+
+.intro > div {
+    flex: 0 0 76%;
+}
+
+/*END OF ABOUT ME CSS*/
+
 
 /* start of work styling */
 .my-projects{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
+    margin: 20px;
+    align-items: stretch;
+}
+
+.my-projects > {
+    flex: 0 0 25%;
+    text-align: right;
 }
 
 .my-projects h2{
-    margin: 10px;
+    font-size: 40px;
+    padding: 0 87px 0 0;
+    border-right: solid;
+    color: rgb(6, 24, 36);
 }
 
-.projects{
+.projects {
+    flex: 0 0 75%;
+    padding: 5px;
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-/* project 1 css*/
-.project1 img{
-    width: 50%;
-    padding: 10px 0px;
-}
-
-/* project 2 css */
-.project2{
-    width: 50%;
-    padding: 50px 0px;
-    background-image: url('../images/coming-soon.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-/* project 3 css */
-.project3{
-    width: 50%;
-    padding: 50px 0px;
-    background-image: url('../images/coming-soon.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-/* project 4 css */
-.project4{
-    width: 50%;
-    padding: 50px 0px;
-    background-image: url('../images/coming-soon.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-/* project 5 css */
-.project5{
-    width: 50%;
-    padding: 50px 0px;
-    background-image: url('../images/coming-soon.jpg');
-    background-size: cover;
-    background-position: center;
+    
 }
 
 /* project title's css */
@@ -145,18 +141,48 @@ body{
     color: gainsboro;
 }
 
+/* project 1 css*/
+.project1 img{
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.project1 {
+    text-decoration: none;
+}
+.project-tile {
+    align-items: flex-end;
+    display: flex; 
+    max-height: 450px;
+    min-height: 250px;
+    flex-basis: calc(50% - 1em)
+}
+
+
+/* project 2 css */
+.project-tile img{
+    width: 100%;
+    padding: 10px 0px;
+}
+
 /*END OF PROJECT CSS */
 
 /*start of contact me section */
 .contact{
     padding: 15px 20px;
+    background-color: rgb(6, 24, 36);
+    color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact a{
     padding: 10px 15px;
     font-weight: bold;
     font-size: 1.2vw;
-    color:rgb(6, 24, 36);
-    text-decoration: underline;
+    text-decoration: underline; 
+    color: gainsboro;
+    list-style-type: none;
 }
 
