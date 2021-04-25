@@ -13,6 +13,7 @@
 
 body{
     background-color: rgba(201, 208, 212, 0.651);
+    overflow-x: hidden;
 }
 
 /* START of header & navigation styling */
@@ -24,10 +25,10 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 9999;
 }
 
 .header h1{
-    margin: 0;
     font-size: 40px;
 }
 
@@ -63,6 +64,7 @@ body{
 .banner{
     background-image: url('../images/banner.png');
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content:flex-start;
     flex-wrap: wrap;
@@ -102,6 +104,7 @@ body{
 }
 /*summary styling*/
 .intro p{
+    margin: 0 auto;
     font-size: 20px;
     font-weight: bold;
     color: var(--dark-blue);
@@ -212,6 +215,7 @@ body{
 /*start of contact me styling*/
 .contact{
     padding: 15px 20px;
+    width: 100%;
     background-color: var(--dark-blue);
     color: var(--silver);
     display: flex;
@@ -238,6 +242,7 @@ body{
 /*MEDIA QUERY FOR SMALLER DESKTOP SCREENS*/
 
 @media screen and (max-width: 980px) {
+    
     .header nav ul li a{
         padding: 10px 15px;
         font-weight: bold;
@@ -246,10 +251,87 @@ body{
         color: var(--silver);
         list-style-type: none;
     }
+
+    .banner{
+        background-image: url('../images/banner.png');
+        background-size: cover;
+        display: flex;
+        justify-content: flex-start;
+        align-items:center;
+    }
+
+    .subtitle{
+        color: var(--dark-blue);
+        text-shadow: 5px 5px 15px var(--silver);
+        margin: .9%;
+        font-size:18px; 
+        position:absolute;
+        right: 1px; 
+    }
+
+
+    .intro p{
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--dark-blue);
+        font-family: 'Courier New', Courier, monospace;
+        padding: 0px 20px;
+    }
+
+
+    .project-tile h3{
+        position: absolute;
+        padding: 3px 3px;
+        bottom: 17px; 
+        color: var(--silver);
+        font-size: 18px;
+    }
 }
 
 /* MEDIA QUERY FOR TABLET SCREENS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {    
+    .subtitle h2{
+        font-size: 17px;
+    }
+
+    .intro h3{
+        border-right: none;
+        border-bottom: solid;
+        text-align: center;
+        width: 100%;
+    }
+    .intro p{
+        text-align:center;
+        position: relative;
+        left: 12%;
+        width: 100%;
+    }
+    
+    .contact{
+        padding: 3px 20px;
+        background-color: var(--dark-blue);
+        color: var(--silver);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .my-projects h2{
+        border-right: none;
+        border-bottom: solid;
+        text-align: center;
+        width: 100%;
+    }
+
+    .projects{
+        position: relative;
+        left: 50px;
+    }
+
+    .projects h3{
+        font-size: 12px;
+    }
+    
     .contact a{
         padding: 10px 15px;
         font-weight: bold;
@@ -259,3 +341,12 @@ body{
         list-style-type: none;
     }
 }
+
+/*MEDIA QUERY FOR MOBILE PHONES */
+@media screen and (max-width: 575px) {
+ 
+}
+
+
+
+    
