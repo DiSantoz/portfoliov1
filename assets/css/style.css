@@ -149,17 +149,30 @@ body{
 
 .project1 {
     text-decoration: none;
+    position: relative;
+}
+
+.project1 h3{
+    position: absolute;
+    padding: 10px 10px;
+    bottom: 17px;
+
 }
 .project-tile {
     align-items: flex-end;
     display: flex; 
     max-height: 450px;
     min-height: 250px;
-    flex-basis: calc(50% - 1em)
+    flex-basis: calc(50% - 1em);
+    position: relative;
 }
 
+.project-tile h3{
+    position: absolute;
+    padding: 10px 10px;
+    bottom: 17px;
+}
 
-/* project 2 css */
 .project-tile img{
     width: 100%;
     padding: 10px 0px;
