@@ -391,16 +391,13 @@ body {
         font-size: 12px;
     }
     .subtitle h3 {
-        font-size: 18px;
+        font-size: 17px;
     }
     .banner img {
         width: 70px;
     }
     .intro h2 {
         font-size: 23px;
-    }
-    .intro br {
-        display: none;
     }
     .intro p {
         font-size: 10px;
