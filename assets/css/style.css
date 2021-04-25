@@ -51,9 +51,9 @@ body{
     color: var(--silver);
     list-style-type: none;
 }
-
+/*hover styling on navigation*/
 .header nav ul li a:hover{
-    filter:brightness(150%);
+    filter:brightness(200%);
 }
 
 /* END OF HEADER & NAVIGATION STLYING*/
@@ -185,7 +185,6 @@ body{
     align-items: flex-end;
     display: flex; 
     max-height: 450px;
-    min-height: 250px;
     flex-basis: calc(50% - 1em);
     position: relative;
 }
@@ -229,9 +228,34 @@ body{
     list-style-type: none;
 }
 
+/*hover styling for contact section*/
 .contact a:hover{
-    filter: brightness(110%);
+    filter: brightness(300%);
 }
 
 /* END OF CONTACT STYLING */
 
+/*MEDIA QUERY FOR SMALLER DESKTOP SCREENS*/
+
+@media screen and (max-width: 980px) {
+    .header nav ul li a{
+        padding: 10px 15px;
+        font-weight: bold;
+        font-size: 1.7vw;
+        text-decoration: underline; 
+        color: var(--silver);
+        list-style-type: none;
+    }
+}
+
+/* MEDIA QUERY FOR TABLET SCREENS */
+@media screen and (max-width: 768px) {
+    .contact a{
+        padding: 10px 15px;
+        font-weight: bold;
+        font-size: 1.5vw;
+        text-decoration: underline; 
+        color: var(--silver);
+        list-style-type: none;
+    }
+}
