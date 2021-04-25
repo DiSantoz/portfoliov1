@@ -96,7 +96,7 @@ body{
     align-items: stretch;
 }
 
-.intro h3{
+.intro h2{
     font-size: 40px;
     padding: 0 70px 0 0;
     border-right: solid;
@@ -260,6 +260,7 @@ body{
         align-items:center;
     }
 
+
     .subtitle{
         color: var(--dark-blue);
         text-shadow: 5px 5px 15px var(--silver);
@@ -286,6 +287,19 @@ body{
         color: var(--silver);
         font-size: 18px;
     }
+
+    .projects{
+        position:relative;
+        left: 10%;
+    }
+
+    .my-projects h2{
+        text-align: center;
+        font-size: 40px;
+        border-right: none;
+        border-bottom: solid;
+        width: 100%;
+     }
 }
 
 /* MEDIA QUERY FOR TABLET SCREENS */
@@ -294,17 +308,24 @@ body{
         font-size: 17px;
     }
 
-    .intro h3{
+    .intro h2{
         border-right: none;
         border-bottom: solid;
         text-align: center;
         width: 100%;
+        font-size: 30px;
     }
     .intro p{
         text-align:center;
         position: relative;
         left: 12%;
         width: 100%;
+        display: inline;
+        font-size: 20px;
+    }
+    
+    .intro br{
+        display: none;
     }
     
     .contact{
@@ -344,8 +365,53 @@ body{
 
 /*MEDIA QUERY FOR MOBILE PHONES */
 @media screen and (max-width: 575px) {
- 
+ .header h1{
+     font-size: 25px;;
+ }
+
+.header nav ul li a{
+    font-size: 12px;
 }
+
+.banner img{
+  width: 70px;
+}
+ .intro h2{
+     font-size: 23px;
+ }
+ .intro br{
+     display: none;
+ }
+
+ .intro p{
+     font-size: 10px;
+     display: inline;
+ }
+
+ .subtitle h2{
+     font-size: 15px;
+ }
+
+ .my-projects h2{
+    position: relative; 
+    text-align: center;
+    font-size: 23px;
+ }
+
+ .projects{
+     display: contents;
+ }
+
+ .contact h2{
+    font-size: 20px;
+ }
+.contact a{
+    font-size: 7px;
+    padding: 10px 0;
+}
+}
+
+
 
 
 
