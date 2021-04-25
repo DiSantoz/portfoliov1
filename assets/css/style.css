@@ -5,11 +5,12 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+
 body{
     background-color: rgb(108, 126, 139);;
 }
 
-/* start of header & navigation styling */
+/* START of header & navigation styling */
 
 .header {
     padding: 15px 20px;
@@ -46,7 +47,9 @@ body{
     list-style-type: none;
 }
 
-/* start of banner css */
+/* END OF HEADER & NAVIGATION STLYING*/
+
+/* START of banner styling */
 
 .banner{
     background-image: url('../images/banner.png');
@@ -69,8 +72,9 @@ body{
     width: 300px;
     height: auto;
 }
+/* END OF BANNER STYLING */
 
-/*start of about me section */
+/*START of about me styling */
 
 .intro{
     display: flex;
@@ -88,6 +92,7 @@ body{
 }
 .intro p{
     font-size: 20px;
+    font-weight: bold;
     color: rgb(6, 24, 36);
     font-family: 'Courier New', Courier, monospace;
 }
@@ -101,10 +106,10 @@ body{
     flex: 0 0 76%;
 }
 
-/*END OF ABOUT ME CSS*/
+/*END OF ABOUT ME styling*/
 
 
-/* start of work styling */
+/* START of work styling */
 .my-projects{
     display: flex;
     flex-wrap: wrap;
@@ -136,12 +141,10 @@ body{
     
 }
 
-/* project title's css */
 .projects h3{
     color: gainsboro;
 }
 
-/* project 1 css*/
 .project1 img{
     width: 100%;
     padding: 10px 0px;
@@ -158,6 +161,9 @@ body{
     bottom: 17px;
 
 }
+
+/* styling for place holder project tiles */
+
 .project-tile {
     align-items: flex-end;
     display: flex; 
@@ -178,9 +184,9 @@ body{
     padding: 10px 0px;
 }
 
-/*END OF PROJECT CSS */
+/*END OF PROJECT STYLING */
 
-/*start of contact me section */
+/*start of contact me styling*/
 .contact{
     padding: 15px 20px;
     background-color: rgb(6, 24, 36);
@@ -198,4 +204,6 @@ body{
     color: gainsboro;
     list-style-type: none;
 }
+
+/* END OF CONTACT STYLING */
 
