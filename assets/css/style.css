@@ -5,17 +5,22 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+/* primary colors used in portfolio */
+:root {
+    --dark-blue: #061824;
+    --silver: gainsboro;
+}
 
 body{
-    background-color: rgb(108, 126, 139);;
+    background-color: rgba(201, 208, 212, 0.651);
 }
 
 /* START of header & navigation styling */
 
 .header {
     padding: 15px 20px;
-    background-color: rgb(6, 24, 36);
-    color: gainsboro;
+    background-color: var(--dark-blue);
+    color: var(--silver);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -43,8 +48,12 @@ body{
     font-weight: bold;
     font-size: 1.2vw;
     text-decoration: underline; 
-    color: gainsboro;
+    color: var(--silver);
     list-style-type: none;
+}
+
+.header nav ul li a:hover{
+    filter:brightness(150%);
 }
 
 /* END OF HEADER & NAVIGATION STLYING*/
@@ -61,12 +70,12 @@ body{
 }
 
 .subtitle{
-    color: rgb(6, 24, 36);
-    text-shadow: 5px 5px 15px gainsboro;
+    color: var(--dark-blue);
+    text-shadow: 5px 5px 15px var(--silver);
     margin: 3.5%;
     font-size:18px;  
 }
-
+/*photo of myself styling*/
 .banner img{
     float:left;
     width: 300px;
@@ -84,16 +93,18 @@ body{
     margin: 20px; 
     align-items: stretch;
 }
+
 .intro h3{
     font-size: 40px;
     padding: 0 70px 0 0;
     border-right: solid;
-    color: rgb(6, 24, 36);
+    color: var(--dark-blue);
 }
+/*summary styling*/
 .intro p{
     font-size: 20px;
     font-weight: bold;
-    color: rgb(6, 24, 36);
+    color: var(--dark-blue);
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -128,7 +139,7 @@ body{
     font-size: 40px;
     padding: 0 87px 0 0;
     border-right: solid;
-    color: rgb(6, 24, 36);
+    color: var(--dark-blue);
 }
 
 .projects {
@@ -142,24 +153,30 @@ body{
 }
 
 .projects h3{
-    color: gainsboro;
+    color: var(--silver);
 }
 
-.project1 img{
+/*styling for Run Buddy project*/
+.run-buddy img{
     width: 100%;
     padding: 10px 0px;
 }
 
-.project1 {
+.run-buddy {
     text-decoration: none;
     position: relative;
 }
 
-.project1 h3{
+.run-buddy h3{
     position: absolute;
     padding: 10px 10px;
     bottom: 17px;
+    color: var(--silver);
+}
 
+/*hover effect for Run Buddy tile*/
+.run-buddy a:hover{
+    filter: brightness(110%);
 }
 
 /* styling for place holder project tiles */
@@ -173,10 +190,12 @@ body{
     position: relative;
 }
 
+
 .project-tile h3{
     position: absolute;
     padding: 10px 10px;
     bottom: 17px;
+    color: var(--silver);
 }
 
 .project-tile img{
@@ -184,13 +203,18 @@ body{
     padding: 10px 0px;
 }
 
+/* placeholder projects hover styling*/
+.project-tile:hover{
+    filter:brightness(140%);
+}
+
 /*END OF PROJECT STYLING */
 
 /*start of contact me styling*/
 .contact{
     padding: 15px 20px;
-    background-color: rgb(6, 24, 36);
-    color: gainsboro;
+    background-color: var(--dark-blue);
+    color: var(--silver);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -201,8 +225,12 @@ body{
     font-weight: bold;
     font-size: 1.2vw;
     text-decoration: underline; 
-    color: gainsboro;
+    color: var(--silver);
     list-style-type: none;
+}
+
+.contact a:hover{
+    filter: brightness(110%);
 }
 
 /* END OF CONTACT STYLING */
