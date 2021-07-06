@@ -8,7 +8,7 @@ This portfolio exhibits my skill in use of flexbox as well as media query to all
 
 This portfolio will be updated frequently as I develop more projects and further improve my skillset in HTML, CSS and other programming languages. 
 
-Check out my [portfolio](https://disantoz.github.io/First-Portfolio-V1/)! Reach out to me via the contact information on my portfolio if you want to connect, offer advice on how I can improve my portfolio or offer advice on how I can be a better developer.
+Check out my [portfolio](https://disantoz.github.io/portfoliov1/)! Reach out to me via the contact information on my portfolio if you want to connect, offer advice on how I can improve my portfolio or offer advice on how I can be a better developer.
 
 ## Usage
 
